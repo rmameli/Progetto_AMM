@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Riccardo Mameli">
+        <meta name="keywords" content="cerca social network friend">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Inserisci i dati del profilo</h1>
+        </header>    
+            <form action="serverchenonesiste.java" method="get">
+                <label for="name">Nome</label>
+                <input type="text" name="name"
+                id="name"/>
+            <br>
+                <label for="surname">Cognome</label>
+                <input type="text" name="surname"
+                id="surname"/>
+            <br>
+                <label for="urlimage">Url immagine di profilo</label>
+                <input type="url" name="urlimage"
+                id="urlimage"/>
+            <br>
+                <label for="presentation">Frase di Presentazione</label>
+                <textarea rows="4" cols="20" name="presentation"
+                id="presentation">
+                </textarea>
+            <br>
+                <label for="data">Data di nascita</label>
+                <input type="date" name="data"
+                id="data"/>
+            <br>
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd” "
+                id="pswd"/>
+            <br>
+                <label for="pswd1">Conferma Password</label>
+                <input type="password" name="pswd1” "
+                id="pswd1"/>
+            <br>
+                <button type="submit">Invia</button>
+            </form>
+        
+        <nav>
+            <h2>Navigazione</h2>
+                    <ul>
+                        <li><a href="descrizione.html">Descrizione di NerdBook</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+        </nav>
+    </body>
+</html>
