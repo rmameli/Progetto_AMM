@@ -65,8 +65,10 @@ nav ul, nav li{
 }
 nav li{
     padding-left: 20px;
-    padding-right: 20px;
-    border-right: 2px solid #111111;    
+    padding-right: 20px;  
+}
+nav li{
+    border-right: 2px solid white;
 }
 nav li.active{
     text-decoration: underline;
@@ -77,9 +79,6 @@ nav li.active{
     padding-left: 0px;
     padding-right: 5px;
 }
-#sidebar{
-    border-right: 2px solid white;
-}
 #sidebar li {
     list-style: none;
 }
@@ -88,4 +87,23 @@ nav li.active{
     margin-right: 5px;
     padding-bottom: 10px;
 }
+.ProfilePic img{
+    max-width: 100px;
+    max-height: 100px;
+}
 
+div#posts h4{
+    display: inline-block;
+}
+
+.postcontent{
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.postcontent a{
+    color: darkblue;
+}
