@@ -11,22 +11,30 @@
     </head>
     
     <body>
-        <header>
-            <div id="TitleLogin">
+        <header id="titlelog">
+            <div>
                 <h1>NerdBook</h1>
             </div>
         </header>
+        <div id="formlog">
             <form action="serverchenonesiste.java" method="get">
-                <label for="username">Username</label>
-                <input type="text" name="username"
-                id="username"/>
-            <br />
-                <label for="pswd">Password</label>
-                <input type="password" name="pswd” "
-                id="pswd"/>
-            <br />
-            <button type="submit">Invia</button>
-            </form>
+            <div id="datalog">
+                <div>
+                    <label for="username">Nome Utente</label>
+                    <input type="text" name="username"
+                    id="username"/>
+                </div>
+                <div>
+                    <label for="pswd">Password</label>
+                    <input type="password" name="pswd"
+                    id="pswd"/>
+                </div>
+                <div class="logbutton">
+                    <button type="submit">Accedi</button>
+                </div>
+                </form>
+            </div>
+        </div>
         
     </body>   
 </html>
