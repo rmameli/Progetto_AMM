@@ -42,7 +42,6 @@ header{
 }
 #Title{
     display: inline-block;
-    border-right: 2px solid white;
 }
 #TitleLogin{
     display: inline-block;
@@ -67,11 +66,22 @@ nav li{
     padding-left: 20px;
     padding-right: 20px;  
 }
-nav li{
-    border-right: 2px solid white;
-}
 nav li.active{
     text-decoration: underline;
+}
+#name-logout{
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+}
+#name-logout h4{
+    color: white;
+}
+#name-log{
+    margin-top: -20px;
+}
+#nav-log nav{
+    margin-top: -34px;
 }
 #sidebar {
     float: left;
@@ -79,11 +89,21 @@ nav li.active{
     padding-left: 0px;
     padding-right: 5px;
 }
-#sidebar li {
+#sidebar{
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+#sidebar ul {
     list-style: none;
 }
+#sidebar #persone li{
+    list-style-image: url(img/icona_persona.png);
+}
 #posts, #profile {
-    margin-left: 325px;
+    margin-left: 270px;
     margin-right: 5px;
     padding-bottom: 10px;
 }
@@ -141,12 +161,26 @@ form button{
 #datalog input{
     width: 98.2%;
 }
+.dataprofile{
+    margin-bottom: 10px;
+}
+.dataprofile input{
+    float: right;
+    margin-right: 60px;
+}
 .logbutton{
     padding-top: 15px;
 }
 #profile{
-    padding-top: 30px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 400px;
+    
 }
 #profile button{
-    width: 36%;
+    width: 95%;
 }
