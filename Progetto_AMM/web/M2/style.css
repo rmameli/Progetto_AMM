@@ -52,12 +52,27 @@ div#Title h1{
     padding-left: 10px;
     padding-right: 10px;
 }
-
+#Summary nav ol{
+    display: grid;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    background-color: #f2f2f2;    
+    padding: 10px;
+}
+nav ol a, p a{
+    color: darkblue;
+}
+nav ol a:hover{
+    font-weight: bold;
+}
+#FunctionBody p, #Description p{
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    background-color: #f2f2f2;    
+    padding: 10px;
+}
 #nav-container {
     display: inline-block;
     position: absolute;
 }
-
 nav ul, nav li{
     display: inline-block;
     color: white;
@@ -102,6 +117,12 @@ nav li.active{
 #sidebar #persone li{
     list-style-image: url(img/icona_persona.png);
 }
+#smash{
+    list-style-image: url(img/icona_smash.png);
+}
+#speedrun{
+    list-style-image: url(img/icona_speedrun.png);
+}
 #posts, #profile {
     margin-left: 270px;
     margin-right: 5px;
@@ -123,6 +144,7 @@ div#posts h4{
     margin-bottom: 15px;
     padding-left: 10px;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 .postcontent a{
     color: darkblue;
@@ -143,10 +165,16 @@ div#posts h4{
     padding: 12px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 form button{
     width: 100%;
     padding: 10px;
+}
+#profile form button{
+    width: 95%;
+    padding: 10px;
+    margin-top: 18px;
 }
 #datalog label:after{
     content: '\A';
@@ -177,10 +205,8 @@ form button{
     margin-top: 5px;
     padding-left: 15px;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     width: 400px;
+    border-radius: 5px;
     
-}
-#profile button{
-    width: 95%;
 }
