@@ -29,7 +29,6 @@ a{
 a:link{
     font-size: 20px;
     text-decoration: none;
-    color: darkblue;
 }
 a:hover{
     font-weight: bold;
@@ -74,6 +73,7 @@ nav ol a:hover{
     position: absolute;
 }
 nav ul, nav li{
+    list-style-type: none;
     display: inline-block;
     color: white;
 }
@@ -209,4 +209,71 @@ form button{
     width: 400px;
     border-radius: 5px;
     
+}
+@media only screen and (max-width: 480px){
+    h1{
+        color: white;
+        font: 25px/40px "Open Sans", Arial, sans-serif;
+        font-weight: bold;
+    }
+    a:link{
+        font-size: 14px;
+        text-decoration: none;
+        color: darkblue;
+    }
+    
+    nav ul, nav li{
+        display: grid;
+        list-style-type: none;
+        color: white;
+    }
+    nav li{
+        padding-left: 0px;
+        padding-right: 0px;  
+    }
+    #name-logout h4{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 28px;
+    }
+    header img{
+        width: 14px;
+        height: 14px;
+    }
+    #name-log {
+        margin-top: -15px;
+    }
+    #nav-container ul{
+        margin-top: 0px;
+    }
+    #profile {
+        background-color: #f2f2f2;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        margin-top: 5px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 400px;
+        border-radius: 5px;
+        float: left;
+    }
+    #profile {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #posts{
+        float: left;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .postcontent {
+        background-color: #f2f2f2;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 400px;
+    }
 }
