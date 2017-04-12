@@ -84,11 +84,7 @@ nav li{
 nav li.active{
     text-decoration: underline;
 }
-#name-logout{
-    display: inline-block;
-    float: right;
-    padding-right: 15px;
-}
+
 #name-logout h4{
     color: white;
 }
@@ -194,7 +190,7 @@ form button{
 }
 .dataprofile input{
     float: right;
-    margin-right: 60px;
+    width: 216px;
 }
 .logbutton{
     padding-top: 15px;
@@ -208,8 +204,15 @@ form button{
     padding-bottom: 10px;
     width: 400px;
     border-radius: 5px;
-    
+    padding-right: 10px;    
 }
+input:focus{
+   border-color: #8080ff;
+}
+textarea:focus{
+   border-color: #8080ff;
+}
+
 @media only screen and (max-width: 480px){
     h1{
         color: white;
@@ -221,6 +224,18 @@ form button{
         text-decoration: none;
         color: darkblue;
     }
+    #name-logout h4{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 28px;
+    }
+    div#Title h1{
+        display: inline-block;
+        line-height: 10px;
+        padding-left: 10px;
+        padding-right: 0px;
+    
+    }
     
     nav ul, nav li{
         display: grid;
@@ -231,11 +246,7 @@ form button{
         padding-left: 0px;
         padding-right: 0px;  
     }
-    #name-logout h4{
-        font-size: 14px;
-        color: white;
-        margin-bottom: 28px;
-    }
+    
     header img{
         width: 14px;
         height: 14px;
@@ -275,5 +286,68 @@ form button{
         padding-top: 5px;
         padding-bottom: 5px;
         width: 400px;
+    }
+    #formlog {
+        width: 320px;
+    }
+}
+@media only screen and (min-width: 480px)
+                   and (max-width: 880px){                                     
+    #profile {
+        float: left;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    #sidebar{
+       margin-top: 5px;
+       padding-right: 0px;
+       padding-bottom: 25px; 
+    }
+    #posts{
+        margin-left: 230px;
+        margin-right: 5px;
+        padding-bottom: 10px;
+    }
+    h1{
+        color: white;
+        font: 28px/42px "Open Sans", Arial, sans-serif;
+        font-weight: bold;
+    }
+    a:link{
+        font-size: 16px;
+        text-decoration: none;
+        color: darkblue;
+    }
+    #name-logout h4{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 28px;
+    }
+    header img{
+        width: 16px;
+        height: 16px;
+    }
+    div#Title h1 {
+        padding-right: 0px; 
+    }
+    #name-log {
+        margin-top: -15px;
+    }
+    #nav-container ul{
+        margin-top: 0px;
+    }
+    #nav-log nav{
+        margin-top: -48px;
+    }
+    nav li{
+        padding-left: 0px;
+        padding-right: 15px;  
+    }
+    #nav-container ul {
+        margin-top: 13px;
+    }
+    .postcontent img{
+        width: 200px;
+        height: 150px;
     }
 }
